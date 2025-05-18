@@ -1,1 +1,0 @@
-import{u as n,g as u,r as c,o as f,d as i}from"./FirebaseUtils-HVElewoM.js";import{r as s,a as b}from"./index-DsPVNeCc.js";function I(){const a=n(),[r,t]=s.useState(null);return s.useEffect(()=>{const o=u(b),e=c(o,`ownerByDashboardId/${a}`);return f(e,d=>{t(d.val())}),()=>i(e)},[a]),r}export{I as u};

@@ -1,2 +1,0 @@
-import{j as r}from"./index-DiojgAgK.js";import{M as a,B as e}from"./FirebaseUtils-Br4SKQFO.js";import{G as n,C as m}from"./CardLink-CyjUF9mp.js";import"./Paragraph-CO9X2mCp.js";import"./Image-Csmv7JmR.js";import"./Anchor-B3Rn8-s3.js";function f(t){const{card:o}=t;return r.jsx(a,{cardState:o,commands:null,children:r.jsx(e,{fill:!0,pad:"small",overflow:{vertical:"auto"},children:r.jsx(n,{style:{whiteSpace:"pre-wrap"},components:{a:{component:m}},children:o.content.replace(/\\\n/g,`
-`)})})})}export{f as default};

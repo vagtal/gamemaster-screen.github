@@ -3,32 +3,32 @@
   <head>
     <meta charset="utf-8">
     <title>Single Page Apps for GitHub Pages</title>
-	<script>
-	  var pathSegmentsToKeep = 1; // porque tu repositorio es un "Project Page"
+    <script>
+  var pathSegmentsToKeep = 1; // porque tu repositorio es un "Project Page"
 
-	  var l = window.location;
+  var l = window.location;
 
-	  // Solo redirigimos si no estamos ya en una ruta con /?/
-	  if (!l.pathname.includes('/?/')) {
-		var newRelativePathQuery = l.pathname
-		  .split('/')
-		  .slice(pathSegmentsToKeep + 1) // quitamos el repo base
-		  .join('/');
+  // Solo redirigimos si no estamos ya en una ruta con /?/
+  if (!l.pathname.includes('/?/')) {
+    var newRelativePathQuery = l.pathname
+      .split('/')
+      .slice(pathSegmentsToKeep + 1) // quitamos el repo base
+      .join('/');
 
-		var newUrl =
-		  l.protocol + '//' + l.host +
-		  l.pathname.split('/').slice(0, pathSegmentsToKeep + 1).join('/') +
-		  '/?/' + newRelativePathQuery +
-		  (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-		  l.hash;
+    var newUrl =
+      l.protocol + '//' + l.host +
+      l.pathname.split('/').slice(0, pathSegmentsToKeep + 1).join('/') +
+      '/?/' + newRelativePathQuery +
+      (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+      l.hash;
 
-		// Guardamos la URL original para restaurarla luego
-		sessionStorage.redirect = l.pathname + l.search + l.hash;
+    // Guardamos la URL original para restaurarla luego
+    sessionStorage.redirect = l.pathname + l.search + l.hash;
 
-		// Redirigimos al index con la URL transformada
-		window.location.replace(newUrl);
-	  }
-	</script>
+    // Redirigimos al index con la URL transformada
+    window.location.replace(newUrl);
+  }
+</script>
   </head>
   <body>
   </body>

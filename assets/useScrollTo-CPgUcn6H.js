@@ -1,0 +1,1 @@
+import{r as e}from"./index-B8dM5wP1.js";function l(s){const r=e.useRef(null),t=e.useRef(!1);return e.useEffect(()=>{const o=r.current;o&&setTimeout(()=>{o.scrollIntoView({behavior:t.current?"smooth":"auto",block:"nearest"}),t.current=!0})},[s]),r}export{l as u};
